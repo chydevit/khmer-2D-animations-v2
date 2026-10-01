@@ -1,0 +1,111 @@
+{
+  "title": "The Lotus Offering",
+  "title_km": "ផ្កាឈូកថ្វាយវត្ត",
+  "language": "km",
+  "fps": 24,
+  "resolution": [1920, 1080],
+  "subtitles": {"km": true, "en": true, "burn": true},
+  "narrator": {"voice_id": "v_narrator"},
+  "scenes": [
+    {
+      "id": "S01", "title": "Morning in the village", "location": "village", "time": "morning",
+      "purpose": "Meet Vibol and Grandpa; Vibol shares his plan", "emotion": "warm, cheerful",
+      "music": "opening", "ambience": "village", "props": ["walking cane"], "lighting": "soft morning sun",
+      "shots": [
+        {"id": "S01_SH01", "framing": "wide", "move": "pan_right", "transition": "fade",
+         "cast": {"grandpa": {"x": 1250, "facing": "left", "pose": "hold_staff", "expr": "calm"},
+                  "boy": {"x": -200, "facing": "right", "visible": false}},
+         "beats": [
+           {"title": {"km": "ផ្កាឈូកថ្វាយវត្ត", "en": "The Lotus Offering"}, "dur": 3.2},
+           {"narrate": "នៅភូមិមួយ មានក្មេងប្រុសម្នាក់ឈ្មោះ វិបុល។", "en": "In a small village lived a boy named Vibol."},
+           {"act": "boy", "enter": "left", "to_x": 820, "with": true, "expr": "happy"}
+         ]},
+        {"id": "S01_SH02", "framing": "two_shot", "move": "push_in",
+         "cast": {"boy": {"x": 820, "facing": "right", "expr": "happy"},
+                  "grandpa": {"x": 1250, "facing": "left", "pose": "hold_staff", "expr": "calm"}},
+         "beats": [
+           {"act": "boy", "pose": "sampeah", "dur": 0.5},
+           {"say": "boy", "km": "ជម្រាបសួរ លោកតា!", "en": "Good morning, Grandpa!", "expr": "happy"},
+           {"act": "boy", "pose": "stand", "dur": 0.3},
+           {"say": "grandpa", "km": "ជម្រាបសួរ ចៅ។ ថ្ងៃនេះ ចៅទៅណា?", "en": "Good morning, my grandson. Where are you going today?", "expr": "smile"}
+         ]},
+        {"id": "S01_SH03", "framing": "medium", "subject": "boy", "move": "drift",
+         "cast": {"boy": {"x": 820, "facing": "right", "expr": "happy"},
+                  "grandpa": {"x": 1250, "facing": "left", "pose": "hold_staff", "expr": "smile"}},
+         "beats": [
+           {"say": "boy", "km": "ខ្ញុំទៅរកផ្កាឈូក យកទៅថ្វាយព្រះសង្ឃនៅវត្ត។", "en": "I'm going to find lotus flowers to offer to the monks at the pagoda.", "pose": "point"},
+           {"camera": {"framing": "medium", "subject": "grandpa", "move": "static", "dur": 0.8}},
+           {"act": "grandpa", "nod": 1, "dur": 0.7},
+           {"say": "grandpa", "km": "ល្អណាស់ ចៅ។ ទៅដោយប្រយ័ត្នណា។", "en": "Very good, grandson. Go carefully.", "expr": "happy"}
+         ]}
+      ]
+    },
+    {
+      "id": "S02", "title": "At the lotus pond", "location": "pond", "time": "day",
+      "purpose": "Vibol and Sophea pick lotus flowers together", "emotion": "joyful",
+      "music": "happy", "ambience": "pond",
+      "shots": [
+        {"id": "S02_SH01", "framing": "wide", "move": "drift", "transition": "dissolve", "transition_dur": 0.8,
+         "cast": {"girl": {"x": 1150, "facing": "left", "pose": "stand", "expr": "happy", "carry": "lotus_basket"},
+                  "boy": {"x": 400, "facing": "right", "expr": "happy"}},
+         "beats": [
+           {"act": "boy", "walk_to": 760},
+           {"say": "girl", "km": "បងវិបុល! មើលនេះ ផ្កាឈូកស្អាតណាស់!", "en": "Vibol! Look, the lotus flowers are so beautiful!", "pose": "carry", "then_pose": "carry"}
+         ]},
+        {"id": "S02_SH02", "framing": "close", "subject": "boy", "move": "push_in",
+         "cast": {"girl": {"x": 1150, "facing": "left", "pose": "carry", "expr": "happy", "carry": "lotus_basket"},
+                  "boy": {"x": 760, "facing": "right", "expr": "surprised"}},
+         "beats": [
+           {"wait": 0.4},
+           {"act": "boy", "emote": "laughing", "dur": 0.8, "sfx": "chime"},
+           {"say": "boy", "km": "ស្អាតមែន! យើងយកទៅវត្តជាមួយគ្នាណា។", "en": "They really are! Let's take them to the pagoda together.", "expr": "happy"}
+         ]}
+      ]
+    },
+    {
+      "id": "S03", "title": "The offering at the pagoda", "location": "temple", "time": "day",
+      "purpose": "The children respectfully offer the flowers; the monk blesses them", "emotion": "calm, respectful",
+      "music": "temple", "ambience": "temple",
+      "shots": [
+        {"id": "S03_SH01", "framing": "wide", "move": "push_in", "transition": "fade", "transition_dur": 0.7,
+         "cast": {"monk": {"x": 1300, "facing": "left", "pose": "hold_bowl", "expr": "calm"},
+                  "boy": {"x": 560, "facing": "right", "expr": "smile"},
+                  "girl": {"x": 380, "facing": "right", "expr": "smile", "pose": "carry", "carry": "lotus_basket"}},
+         "beats": [
+           {"sfx": "temple_bell"},
+           {"act": "boy", "walk_to": 900, "async": true},
+           {"act": "girl", "walk_to": 740},
+           {"act": "boy", "legs": "kneel", "pose": "sampeah_high", "dur": 0.6},
+           {"act": "girl", "legs": "kneel", "pose": "sampeah_high", "carry": null, "with": true, "dur": 0.6},
+           {"say": "boy", "km": "ព្រះតេជគុណ យើងខ្ញុំយកផ្កាឈូកមកថ្វាយ។", "en": "Venerable monk, we have brought lotus flowers as an offering.", "gesture": false}
+         ]},
+        {"id": "S03_SH02", "framing": "medium", "subject": "monk", "move": "drift",
+         "cast": {"monk": {"x": 1300, "facing": "left", "pose": "hold_bowl", "expr": "calm"},
+                  "boy": {"x": 900, "facing": "right", "legs": "kneel", "pose": "sampeah_high", "expr": "smile"},
+                  "girl": {"x": 740, "facing": "right", "legs": "kneel", "pose": "sampeah_high", "expr": "smile"}},
+         "beats": [
+           {"say": "monk", "km": "សាធុ! ក្មួយទាំងពីរជាក្មេងល្អ ចេះគោរពចាស់ទុំ។", "en": "Sadhu! You two are good children who respect your elders.", "expr": "smile", "gesture": false},
+           {"sfx": "bell"},
+           {"wait": 0.6}
+         ]}
+      ]
+    },
+    {
+      "id": "S04", "title": "Evening", "location": "village", "time": "evening",
+      "purpose": "Ending and moral", "emotion": "warm resolution",
+      "music": "ending", "ambience": "village",
+      "shots": [
+        {"id": "S04_SH01", "framing": "wide", "move": "pull_out", "transition": "dissolve", "transition_dur": 1.0,
+         "cast": {"grandpa": {"x": 1250, "facing": "left", "pose": "hold_staff", "expr": "happy"},
+                  "boy": {"x": 760, "facing": "right", "expr": "happy"},
+                  "girl": {"x": 560, "facing": "right", "expr": "happy", "pose": "clasp"}},
+         "beats": [
+           {"narrate": "ចាប់ពីថ្ងៃនោះមក ក្មេងទាំងពីរតែងតែធ្វើអំពើល្អ ជារៀងរាល់ថ្ងៃ។", "en": "From that day on, the two children did good deeds every day."},
+           {"act": "boy", "pose": "wave", "dur": 1.6},
+           {"act": "girl", "pose": "wave", "with": true, "dur": 1.6},
+           {"wait": 1.0}
+         ]}
+      ]
+    }
+  ]
+}
